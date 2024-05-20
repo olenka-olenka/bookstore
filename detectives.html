@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Детективи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин книг</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="categories.html">Категорії книг</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="search.html">Акції та пропозиції</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Увійти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-books">
+        <h2>Книги у жанрі "Детективи"</h2>
+
+    
+        <form id="search-form">
+                <input type="text" id="search-input" placeholder="Пошук за назвою">
+                <button type="submit">Знайти</button>
+        </form>
+            <div id="search-results" class="books-container">
+                <!-- Тут будуть відображені результати пошуку -->
+            </div>
+    
+        <div class="books-grid">
+        <div class="book">
+            <img src="/images/7.webp" alt="Назва книги 1">
+            <h3 class="title">Вбивство у Східному експресі</h3>
+            <p class="author">Автор: Агата Крісті</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 380 грн</p>
+            <button class="add-to-cart" data-title="Вбивство у „Східному експресі"" data-price="380 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/8.webp" alt="Назва книги 2">
+            <h3 class="title"> Ребекка</h3>
+            <p class="author">Автор: Дафна Дю Мор’є</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 450 грн</p>
+            <button class="add-to-cart" data-title="Ребекка" data-price="450 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/9.jpg" alt="Назва книги 3">
+            <h3 class="title">Талановитий містер Ріплі</h3>
+            <p class="author">Автор: Патриція Гайсміт</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 480 грн</p>
+            <button class="add-to-cart" data-title="Талановитий містер Ріплі" data-price="480 грн"">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/10.webp" alt="Назва книги 4">
+            <h3 class="title">Мала барабанщиця</h3>
+            <p class="author">Автор: Джон ле Карре</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 490 грн</p>
+            <button class="add-to-cart" data-title="Мала барабанщиця" data-price="490 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/11.webp" alt="Назва книги 5">
+            <h3 class="title">Правда про справу Гаррі</h3>
+            <p class="author">Автор: Жоель Діккер</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 400 грн</p>
+            <button class="add-to-cart" data-title="Правда про справу Гаррі Квеберта" data-price="400 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/12.webp" alt="Назва книги 6">
+            <h3 class="title">У лісі</h3>
+            <p class="author">Автор: Тана Френч</p>
+            <p class="genre">Жанр: Детективи</p>
+            <p class="price">Ціна: 450 грн</p>
+            <button class="add-to-cart" data-title="У лісі" data-price="450 грн">Додати в кошик</button>
+        </div>
+            
+     </div>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Магазин книг</p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

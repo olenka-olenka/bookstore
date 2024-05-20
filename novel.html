@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Романи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин книг</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="categories.html">Категорії книг</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="search.html">Акції та пропозиції</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Увійти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-books">
+        <h2>Книги у жанрі "Роман"</h2>
+
+    
+        <form id="search-form">
+                <input type="text" id="search-input" placeholder="Пошук за назвою">
+                <button type="submit">Знайти</button>
+        </form>
+            <div id="search-results" class="books-container">
+                <!-- Тут будуть відображені результати пошуку -->
+            </div>
+    
+        <div class="books-grid">
+        <div class="book">
+            <img src="/images/13.jpg" alt="Назва книги 1">
+            <h3 class="title">Тінь гори</h3>
+            <p class="author">Автор: Грегорі Девід Робертс</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 380 грн</p>
+            <button class="add-to-cart" data-title="Тінь гори" data-price="380 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/14.jpg" alt="Назва книги 2">
+            <h3 class="title"> Мобі Дік</h3>
+            <p class="author">Автор: Герман Мелвілл</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 450 грн</p>
+            <button class="add-to-cart" data-title="Мобі Дік" data-price="450 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/15.jpg" alt="Назва книги 3">
+            <h3 class="title">Покинь, якщо кохаєш</h3>
+            <p class="author">Автор: Коллін Гувер</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 480 грн</p>
+            <button class="add-to-cart" data-title="Покинь, якщо кохаєш" data-price="480 грн"">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/16.png" alt="Назва книги 4">
+            <h3 class="title">Марія</h3>
+            <p class="author">Автор: Улас Самчук</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 390 грн</p>
+            <button class="add-to-cart" data-title="Марія" data-price="390 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/17.jpg" alt="Назва книги 5">
+            <h3 class="title">Убити пересмішника</h3>
+            <p class="author">Автор: Гарпер Лі</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 400 грн</p>
+            <button class="add-to-cart" data-title="Убити пересмішника" data-price="400 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/18.webp" alt="Назва книги 6">
+            <h3 class="title">Тисяча пам'ятних поцілунків</h3>
+            <p class="author">Автор: Тіллі Коул</p>
+            <p class="genre">Жанр: Роман</p>
+            <p class="price">Ціна: 350 грн</p>
+            <button class="add-to-cart" data-title="Тисяча пам'ятних поцілунків" data-price="350 грн">Додати в кошик</button>
+        </div>
+            
+     </div>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Магазин книг</p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

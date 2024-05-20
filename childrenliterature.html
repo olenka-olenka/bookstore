@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дитяча література</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин книг</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="categories.html">Категорії книг</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="search.html">Акції та пропозиції</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Увійти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-books">
+        <h2>Книги у жанрі "Дитяча література"</h2>
+
+    
+        <form id="search-form">
+                <input type="text" id="search-input" placeholder="Пошук за назвою">
+                <button type="submit">Знайти</button>
+        </form>
+            <div id="search-results" class="books-container">
+                <!-- Тут будуть відображені результати пошуку -->
+            </div>
+    
+        <div class="books-grid">
+        <div class="book">
+            <img src="/images/1.jpg" alt="Назва книги 1">
+            <h3 class="title">Одного разу на Різдво</h3>
+            <p class="author">Автор: Надійка Гербіш</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 290 грн</p>
+            <button class="add-to-cart" data-title="Одного разу на Різдво" data-price="290 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/2.jpg" alt="Назва книги 2">
+            <h3 class="title"> 36 і 6 котів</h3>
+            <p class="author">Автор: Галина Вдовиченко</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 350 грн</p>
+            <button class="add-to-cart" data-title="36 і 6 котів" data-price="350 грн">Додати в кошик</button>
+        </div>
+
+        <div class="book">
+            <img src="/images/3.jpg" alt="Назва книги 3">
+            <h3 class="title">Пригоди Тома Сойєра</h3>
+            <p class="author">Автор: Марк Твен</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 280 грн</p>
+            <button class="add-to-cart" data-title="Пригоди Тома Сойєра" data-price="280 грн"">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/4.jpg" alt="Назва книги 4">
+            <h3 class="title">Маленький принц</h3>
+            <p class="author">Автор: Антуан де Сент-Екзюпері</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 390 грн</p>
+            <button class="add-to-cart" data-title="Маленький принц" data-price="390 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/5.jpg" alt="Назва книги 5">
+            <h3 class="title">Мумі-тролі</h3>
+            <p class="author">Автор: Туве Янссон</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 400 грн</p>
+            <button class="add-to-cart" data-title="Мумі-тролі" data-price="400 грн">Додати в кошик</button>
+        </div>
+        <div class="book">
+            <img src="/images/6.jpg" alt="Назва книги 6">
+            <h3 class="title">Казки на ніч</h3>
+            <p class="author">Автор: Ім'я Автора</p>
+            <p class="genre">Жанр: Дитяча література</p>
+            <p class="price">Ціна: 150 грн</p>
+            <button class="add-to-cart" data-title="Казки на ніч" data-price="150 грн">Додати в кошик</button>
+        </div>
+            
+     </div>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Магазин книг</p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин книг</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="categories.html">Категорії книг</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="search.html">Акції та пропозиції</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Увійти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-cart">
+        <h2>Кошик</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Тут будуть відображатися товари в кошику -->
+        </div>
+        <div id="total-price"></div> <!-- Елемент для відображення загальної суми -->
+        <button onclick="clearCart()">Очистити кошик</button>
+        <button onclick="openCheckoutModal()">Оформити замовлення</button>
+    </main>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutModal()">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form id="checkout-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required> 
+                <br>
+                <label for="address">Адреса:</label>
+                <input type="text" id="address" name="address" required>
+                <br>
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone" name="phone" required>
+                <br>
+                <button type="submit">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Магазин книг</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+
+
+
